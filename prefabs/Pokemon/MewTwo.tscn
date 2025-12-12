@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7l7wwex1in2a"]
+
+[ext_resource type="Texture2D" uid="uid://11fltwm3scwm" path="res://prefabs/Pokemon/Mewtwo.png" id="1_me0d2"]
+
+[node name="MewTwo" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_me0d2")

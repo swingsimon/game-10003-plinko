@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://trin1yw617yt"]
+
+[ext_resource type="Texture2D" uid="uid://dakmn5c8qlur8" path="res://prefabs/Pokemon/Electabuzz.png" id="1_t43bp"]
+
+[node name="Electabuzz" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t43bp")

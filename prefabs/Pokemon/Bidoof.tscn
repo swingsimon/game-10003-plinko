@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3isckwkrcbtb"]
+
+[ext_resource type="Texture2D" uid="uid://vb0nupypqkgc" path="res://prefabs/Pokemon/Bidoof.png" id="1_ctvyv"]
+
+[node name="Bidoof" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ctvyv")

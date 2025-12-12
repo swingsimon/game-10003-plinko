@@ -15,10 +15,14 @@ run/main_scene="uid://cyy8uc4m1fvy6"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+TeamData="*res://TeamData.cs"
+
 [display]
 
-window/size/viewport_width=625
-window/size/viewport_height=850
+window/size/viewport_width=800
+window/size/viewport_height=1000
 
 [dotnet]
 

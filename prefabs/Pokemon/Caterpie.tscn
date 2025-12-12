@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbbk7fvh2b7wo"]
+
+[ext_resource type="Texture2D" uid="uid://yr5fofjamjou" path="res://prefabs/Pokemon/Caterpie.png" id="1_0x8ai"]
+
+[node name="Caterpie" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0x8ai")

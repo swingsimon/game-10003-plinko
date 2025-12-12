@@ -17,14 +17,17 @@ size = Vector2(650, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhynp"]
 size = Vector2(20, 140)
 
-[node name="PlinkoLevel" type="Node2D" node_paths=PackedStringArray("ScoreValue", "RespawnMessage", "PlayerDisks", "GameCamera", "FirstPlayer")]
+[node name="PlinkoLevel" type="Node2D" node_paths=PackedStringArray("ScoreValue", "RespawnMessage", "EncounterLabel", "PlayerDisks", "GameCamera", "FirstPlayer", "TeamPanel", "TeamTitle")]
 script = ExtResource("1_lxrb4")
 ScoreValue = NodePath("CanvasLayer/ScoreValue")
 RespawnMessage = NodePath("CanvasLayer/RespawnMessage")
+EncounterLabel = NodePath("CanvasLayer/EncounterLabel")
 PlayerScene = ExtResource("4_20e0n")
 PlayerDisks = NodePath("PlayerDisks")
 GameCamera = NodePath("Camera2D")
 FirstPlayer = NodePath("PlayerDisks/Player")
+TeamPanel = NodePath("TeamPanel")
+TeamTitle = NodePath("TeamTitle")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(313, 425)
@@ -52,6 +55,12 @@ grow_horizontal = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 text = "Left Click to Respawn"
+
+[node name="EncounterLabel" type="Label" parent="CanvasLayer"]
+offset_left = 321.0
+offset_top = 930.0
+offset_right = 632.0
+offset_bottom = 955.0
 
 [node name="Pegs" type="Node2D" parent="."]
 
@@ -215,26 +224,31 @@ PlinkoLevelNode = NodePath("../..")
 [node name="Bucket2" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
 position = Vector2(128, 784)
 BucketScore = 500
+EncounterTier = 2
 PlinkoLevelNode = NodePath("../..")
 
 [node name="Bucket3" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
 position = Vector2(216, 784)
 BucketScore = 1000
+EncounterTier = 3
 PlinkoLevelNode = NodePath("../..")
 
 [node name="Bucket4" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
 position = Vector2(312, 784)
 BucketScore = 5000
+EncounterTier = 4
 PlinkoLevelNode = NodePath("../..")
 
 [node name="Bucket5" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
 position = Vector2(408, 784)
 BucketScore = 1000
+EncounterTier = 3
 PlinkoLevelNode = NodePath("../..")
 
 [node name="Bucket6" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
 position = Vector2(496, 784)
 BucketScore = 500
+EncounterTier = 2
 PlinkoLevelNode = NodePath("../..")
 
 [node name="Bucket7" parent="ScoreBuckets" node_paths=PackedStringArray("PlinkoLevelNode") instance=ExtResource("4_o0fae")]
@@ -245,5 +259,22 @@ PlinkoLevelNode = NodePath("../..")
 [node name="PlayerDisks" type="Node2D" parent="."]
 
 [node name="Player" parent="PlayerDisks" node_paths=PackedStringArray("GameCamera") instance=ExtResource("4_20e0n")]
-position = Vector2(302, -529)
+position = Vector2(307, 36)
 GameCamera = NodePath("../../Camera2D")
+
+[node name="EncounterSpawns" type="Node2D" parent="."]
+visible = false
+position = Vector2(298, 913)
+
+[node name="TeamPanel" type="HBoxContainer" parent="."]
+offset_left = 138.0
+offset_top = 881.0
+offset_right = 178.0
+offset_bottom = 921.0
+
+[node name="TeamTitle" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 876.0
+offset_right = 89.0
+offset_bottom = 899.0
+text = "Your Team"

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cby7rko12j5lo"]
+
+[ext_resource type="Texture2D" uid="uid://didnnvp1ecqo7" path="res://prefabs/Pokemon/Haunter.png" id="1_k6yev"]
+
+[node name="Haunter" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k6yev")

@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2c4rluh3rgj4"]
+
+[ext_resource type="Script" uid="uid://b1v12y7wrephg" path="res://TeamShowcase.cs" id="1_4aftc"]
+
+[node name="TeamShowcase" type="Control" node_paths=PackedStringArray("TeamContainer", "PlayAgainButton")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4aftc")
+TeamContainer = NodePath("TeamContainer")
+PlayAgainButton = NodePath("PlayAgainButton")
+
+[node name="TeamContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 796.0
+offset_bottom = 656.0
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="TeamContainer"]
+layout_mode = 2
+
+[node name="PlayAgainButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 680.0
+offset_right = 464.0
+offset_bottom = 740.0
+text = "PLAY AGAIN
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 641.0
+offset_right = 530.0
+offset_bottom = 664.0
+text = "Look at your definitely well rounded team!"

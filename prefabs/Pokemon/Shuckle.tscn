@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwy6kg4gflhcd"]
+
+[ext_resource type="Texture2D" uid="uid://uotmohodqcrw" path="res://prefabs/Pokemon/Shuckle.png" id="1_iw75i"]
+
+[node name="Shuckle" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_iw75i")

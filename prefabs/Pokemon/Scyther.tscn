@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1yudal1a6hqg"]
+
+[ext_resource type="Texture2D" uid="uid://vkds1ecdm5sq" path="res://prefabs/Pokemon/Scyther.png" id="1_lyk8o"]
+
+[node name="Scyther" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lyk8o")
