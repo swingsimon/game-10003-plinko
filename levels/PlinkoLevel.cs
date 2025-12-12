@@ -15,8 +15,8 @@ public partial class PlinkoLevel : Node2D
 	[Export] public Player FirstPlayer;
 	[Export] public Node2D EncounterSpawns;
 	[Export] public AudioStreamPlayer CatchSound;
-	[Export] public HBoxContainer TeamPanel;   // UI container for team display
-	[Export] public Label TeamTitle;           // Label above team panel
+	[Export] public HBoxContainer TeamPanel;  
+	[Export] public Label TeamTitle;           
 
 	private List<string> team = new List<string>();
 
